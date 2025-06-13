@@ -1,0 +1,43 @@
+<!-- products.html -->
+{% extends 'base.html' %}
+{% block title %}Our Products - ComfortCoves{% endblock %}
+{% block content %}
+<section class="products">
+  <div class="container">
+    <h1>Our Signature Products</h1>
+    <h4>Each product is designed to provide luxury and relaxation, tailored for every guest experience.</h4>
+    <div class="grid">
+      <div class="product">
+        <img src="https://images.meesho.com/images/products/128609615/scbya_512.jpg" alt="Shampoo">
+        <h3><a href="{{ url_for('product_detail', product_name='shampoo') }}">Herbal Shampoo</a></h3>
+        <p>Infused with argan oil and lavender for a rejuvenating cleanse.</p>
+      </div>
+      <div class="product">
+        <img src="https://lovebeautyandplanet.in/cdn/shop/files/cherry_blossom_body_wash_200_ml.jpg" alt="Body Wash">
+        <h3><a href="{{ url_for('product_detail', product_name='bodywash') }}">Soothing Body Wash</a></h3>
+        <p>Gentle formula for a luxurious bathing experience.</p>
+      </div>
+      <div class="product">
+        <img src="https://www.goodnesszerowaste.co.uk/cdn/shop/products/Lemon_Calendula3_540x_6f11086d-bcc2-40cd-9500-7a965c32da01.jpg" alt="Soap">
+        <h3><a href="{{ url_for('product_detail', product_name='soap') }}">Botanical Soap</a></h3>
+        <p>Handcrafted with natural oils and floral extracts.</p>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61Ua5GyYRvL._AC_UF1000,1000_QL80_.jpg" alt="Robe">
+        <h3><a href="{{ url_for('product_detail', product_name='robe') }}">Luxury Bathrobe</a></h3>
+        <p>Plush, breathable, and supremely comfortable for all seasons.</p>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/91zGWYbN0+L._AC_UF1000,1000_QL80_.jpg" alt="Towel">
+        <h3><a href="{{ url_for('product_detail', product_name='towel') }}">Premium Towels</a></h3>
+        <p>Ultra-soft, absorbent cotton towels for unmatched drying comfort.</p>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81VlNYaFJDL._AC_UF894,1000_QL80_.jpg" alt="Slippers">
+        <h3><a href="{{ url_for('product_detail', product_name='slippers') }}">Comfort Slippers</a></h3>
+        <p>Cushioned indoor slippers with anti-slip sole for guests' comfort.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
