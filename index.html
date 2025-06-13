@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - ComfortCoves{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to ComfortCoves</h1>
+    <p>Your one-stop shop for premium hotel industry products and services designed to elevate your guest experience.</p>
+    <a href="{{ url_for('products') }}" class="btn">Explore Products</a>
+  </div>
+</section>
+
+<section class="features">
+  <h2>Our Highlights</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/66900de201bf5c81f51690d9/Hotel-amenities-on-a-traty-with-soon-to-be-banned-plastic-bottles/0x0.jpg" alt="Hotel Shampoo">
+      <h3>Quality Products</h3>
+      <p>Only the best amenities for your guests, from shampoo to bathrobes.</p>
+      <a href="{{ url_for('products') }}" class="btn btn-small">View All Products</a>
+    </div>
+    <div class="feature">
+      <img src="https://www.hotel-suppliers.com/wp-content/uploads/2024/05/hotel%20supply%20news%20article.jpg" alt="Amenity Packaging">
+      <h3>Custom Packaging</h3>
+      <p>Stand out with eco-friendly and branded packaging tailored to your hotel’s unique style.</p>
+      <a href="{{ url_for('services') }}" class="btn btn-small">Explore Services</a>
+    </div>
+    <div class="feature">
+      <img src="https://www.love2laundry.com/blog/wp-content/uploads/2022/12/shutterstock_1465633295.jpg" alt="Laundry Service">
+      <h3>Laundry & Linen Care</h3>
+      <p>Professional care ensuring freshness and softness every time, giving your guests comfort they’ll remember.</p>
+      <a href="{{ url_for('services') }}" class="btn btn-small">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-brief">
+  <h2>Why Choose ComfortCoves?</h2>
+  <p>We combine quality, customization, and sustainability to help hotels provide the best possible experience for their guests. Whether you’re a boutique inn or a luxury resort, our solutions fit your needs.</p>
+  <a href="{{ url_for('about') }}" class="btn">Learn More About Us</a>
+</section>
+
+<section class="cta">
+  <h2>Ready to Upgrade Your ComfortCoves?</h2>
+  <p>Get in touch with us today for custom solutions and exceptional products.</p>
+  <a href="{{ url_for('contact') }}" class="btn">Contact Us</a>
+</section>
+{% endblock %}

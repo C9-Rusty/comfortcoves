@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Aromatic Shampoo",
+    "price": "$12.00",
+    "description": "Infused with essential oils, perfect for luxury stays.",
+    "image": "shampoo.jpg"
+  },
+  {
+    "name": "Body Lotion",
+    "price": "$9.99",
+    "description": "Hydrating formula tailored for guest comfort.",
+    "image": "lotion.jpg"
+  },
+  {
+    "name": "Herbal Soap",
+    "price": "$4.50",
+    "description": "Natural herbal soap bars with refreshing aroma.",
+    "image": "soap.jpg"
+  }
+]

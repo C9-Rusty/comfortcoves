@@ -1,0 +1,38 @@
+<!-- services.html -->
+{% extends 'base.html' %}
+{% block title %}Our Services - ComfortCoves{% endblock %}
+{% block content %}
+<section class="services">
+  <div class="container">
+    <h1>Tailored Hospitality Services</h1>
+    <h4>Explore a curated selection of services designed for modern hotels and resorts.</h4>
+    <div class="grid">
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='amenity-packaging') }}">Custom Amenity Packaging</a></h3>
+        <p>Elevate your brand with bespoke packaging for every room essential.</p>
+      </div>
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='bulk-supply') }}">Bulk Supply Solutions</a></h3>
+        <p>Cost-effective bulk deliveries of your preferred hotel products.</p>
+      </div>
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='fragrance-customization') }}">Fragrance Customization</a></h3>
+        <p>Signature scents tailored to reflect your brand identity.</p>
+      </div>
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='laundry-service') }}">Laundry & Linen Care</a></h3>
+        <p>Professional care for your luxury linens and bathrobes.</p>
+      </div>
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='eco-packaging') }}">Eco-Friendly Packaging</a></h3>
+        <p>Sustainable, biodegradable alternatives to reduce your footprint.</p>
+      </div>
+      <div class="service">
+        <h3><a href="{{ url_for('service_detail', service_name='branding-consulting') }}">Brand Consulting</a></h3>
+        <p>Hospitality branding strategies from experts in guest experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+  
